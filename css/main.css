@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -193,7 +193,7 @@ header {
 }
 
 .shop {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 
@@ -245,13 +245,13 @@ header {
 /* home page css start here */
 
 #home {
-    margin-top: 4%;
-    margin-bottom: 4%;
+    height: 800px;
+    width: 1500px;
 }
 
 .loader img {
-    height: 900px;
-    width: 1550px;
+    height: 800px;
+    width: 1500px;
 }
 
 
@@ -264,11 +264,10 @@ header {
     position: absolute;
     flex-direction: column;
     top: 50%;
-    left: 20%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    background-color: rgba(102, 102, 102, 0.578);
     border-radius: 5px;
-    width: 400px;
+    width: 600px;
     height: 300px;
 }
 
@@ -276,6 +275,11 @@ header {
     color: black;
     padding-left: 35px;
     padding-bottom: 10px;
+}
+
+.centered h2 {
+    padding: 0 45px 30px 35px;
+    font-size: 20px;
 }
 
 .centered .btn {
@@ -308,7 +312,7 @@ header {
 .Brands h2 {
     color: var(--text-color);
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .brands {
@@ -316,7 +320,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
     width: 70%;
-    margin: 5% 20% 5% 20%;
+    margin: 5% 20% 10% 20%;
 }
 
 .brands img {
@@ -343,6 +347,7 @@ header {
     justify-content: space-between;
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 15px;
 }
 
 .aboutDetails {
@@ -383,7 +388,8 @@ header {
     margin-left: 15%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     height: 150px;
     display: flex;
     align-items: center;
@@ -526,11 +532,16 @@ header {
     font-size: 20px;
 }
 
+.formcontainer label {
+    font-size: 18px;
+}
+
 .formcontainer input {
     border: none;
     margin-bottom: 7px;
     outline: none;
     padding: 3px;
+    font-size: 15px;
 }
 
 .formcontainer textarea {
@@ -546,16 +557,6 @@ header {
 .formcontainer .button {
     background-color: black;
     color: white;
-    font-size: 20px;
-    border: 5px;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.formcontainer .button:hover {
-    cursor: pointer;
-    background-color: red;
     font-size: 20px;
     border: 5px;
     margin-top: 5px;
@@ -591,8 +592,25 @@ header {
 
 .contactform h3 {
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 20px;
+}
+
+.contactform .button {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactform .button:hover {
+    cursor: pointer;
+    background-color: red;
+    font-size: 20px;
+    border: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 
